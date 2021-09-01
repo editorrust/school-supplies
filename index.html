@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="Images/googly-pencil.png" type="image/x-icon">
+      <link rel="stylesheet" href="styles.css">
+      <title>School Supplies Revolution!</title>
+   </head>
+   <body>
+      <div class="motherBox">
+         <img class="pencil item" id="motherPencil" src="Images/googly-pencil.png" draggable="true" ondragstart="drag(event)">
+         <img class="eraser item" id="motherEraser" src="Images/googly-eraser.png" draggable="true" ondragstart="drag(event)">
+         <img class="ruler item" id="motherRuler" src="Images/googly-ruler.png" draggable="true" ondragstart="drag(event)">
+         <img class="paperclip item" id="motherPaperclip" src="Images/googly-paperclip.png" draggable="true" ondragstart="drag(event)">
+         <img class="stapler item" id="motherStapler" src="Images/googly-stapler.png" draggable="true" ondragstart="drag(event)">
+         <img class="clipboard item" id="motherClipboard" src="Images/googly-clipboard.png" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div class="marketBox">
+         <p class="heading">Market</p>
+         <p class="coinsOwned">Coins: <span class="coins">0</span></p>
+         <button class="add-pencil" onclick="addPencil()">Add pencil for <span class="pencilPrice">10</span> Coins</button>
+      </div>
+
+      <div class="pencil-holder" ondrop="drop(event)" ondragover="allowDrop(event)">
+         <p class="heading">Supplies Box</p>
+         <img class="pencil item" src="Images/googly-pencil.png" draggable="true" ondragstart="drag(event)" id="uniqueId1">
+         <img class="pencil item" src="Images/googly-pencil.png" draggable="true" ondragstart="drag(event)" id="uniqueId2">
+      </div>
+      <div class="sandbox">
+         <p class="heading heading-sandbox">Sandbox</p>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+         <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="museum sandbox">
+         <p class="heading heading-museum">Museum</p>
+         <div class="div" title="Pencil"><img class="item" src="Images/googly-pencil.png" alt=""></div>
+         <div class="div" title="Eraser"></div>
+         <div class="div" title="Ruler"></div>
+         <div class="div" title="Paperclip"></div>
+         <div class="div" title="Stapler"></div>
+         <div class="div" title="Clipboard"></div>
+      </div>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+</html>

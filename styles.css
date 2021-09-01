@@ -1,0 +1,107 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.div {
+   height: 30vh;
+   margin: 1%;
+   padding: .6%;
+   border: 1vh solid #eee;
+   border-radius: 2vh;
+   text-align: center;
+}
+
+.motherBox { display: none; }
+.item { height: 25vh; }
+
+.marketBox {
+   position: relative;
+   width: 96%;
+   height: 28vh;
+   margin: 2%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   text-align: center;
+   border-radius: 2vh;
+   box-shadow: 0 0 1vh #262626;
+}
+
+.coinsOwned {
+   text-align: center;
+   padding: 5vh;
+   font-size: 8vh;
+   font-family: "Nunito";
+   border-right: solid .2vh #eee;
+}
+
+.add-pencil {
+   background-color: transparent;
+   box-sizing: border-box;
+   font-size: 6vh;
+   height: 100%;
+   width: 100%;
+   border: none;
+}
+
+button {
+   font-family: sans-serif;
+   transition: transform 150ms ease;
+}
+
+button:focus { outline: none; }
+button:active { transform: scale(0.99); }
+
+.pencil-holder {
+   background-color: #eee;
+   width: 96%;
+   min-height: 28vh;
+   text-align: center;
+   margin: 2%;
+   border-radius: 2vh;
+   box-shadow: 0 0 1vh #262626;
+   position: relative;
+}
+
+.heading {
+   position: absolute;
+   font-size: 6vh;
+   font-family: "Nunito";
+   text-shadow: 0 0 .5vh #fff;
+   top: -4vh;
+   width: 100%;
+}
+
+.sandbox {
+   position: relative;
+   background-color: #f5f5f5;
+   width: 96%;
+   margin: 2%;
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   text-align: center;
+   border-radius: 2vh;
+   box-shadow: 0 0 1vh #262626;
+}
+
+.explosion {
+   height: 25vh;
+   content: url("Images/bam.png");
+   animation: explosion .15s 4 alternate;
+}
+
+.cold {
+   filter: grayscale(50%);
+   animation: shiver .2s 3 alternate;
+}
+
+@keyframes explosion {
+   0% { transform: rotate(45deg) scale(1.2); }
+   50% { transform: rotate(0deg) scale(.8); }
+   100% { transform: rotate(-45deg) scale(1.2); }
+}
+
+@keyframes shiver {
+   0% { transform: translate(-.5vh); }
+   100% { transform: translate(.5vh); }
+}
