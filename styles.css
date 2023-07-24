@@ -5,11 +5,12 @@
 
 .div {
    height: 30vh;
-   margin: 1%;
+   margin: .5vh;
    padding: .6%;
    border: 1vh solid #eee;
-   border-radius: 2vh;
    text-align: center;
+   border-radius: 3.5vh;
+   background-color: #fafafa;
 }
 
 .motherBox { display: none; }
@@ -23,8 +24,8 @@
    display: grid;
    grid-template-columns: 50% 50%;
    text-align: center;
+   background-color: #f2f2f2;
    border-radius: 2vh;
-   box-shadow: 0 0 1vh #262626;
 }
 
 .coinsOwned {
@@ -32,7 +33,7 @@
    padding: 5vh;
    font-size: 8vh;
    font-family: "Nunito";
-   border-right: solid .2vh #eee;
+   border-right: solid .4vh #eee;
 }
 
 .add-pencil {
@@ -53,14 +54,13 @@ button:focus { outline: none; }
 button:active { transform: scale(0.99); }
 
 .pencil-holder {
-   background-color: #eee;
    width: 96%;
    min-height: 28vh;
    text-align: center;
    margin: 2%;
-   border-radius: 2vh;
-   box-shadow: 0 0 1vh #262626;
    position: relative;
+   background-color: #f2f2f2;
+   border-radius: 2vh;
 }
 
 .heading {
@@ -74,14 +74,15 @@ button:active { transform: scale(0.99); }
 
 .sandbox {
    position: relative;
-   background-color: #f5f5f5;
    width: 96%;
+   padding: .5vh;
    margin: 2%;
+   box-sizing: border-box;
    display: grid;
    grid-template-columns: 25% 25% 25% 25%;
    text-align: center;
+   background-color: #f2f2f2;
    border-radius: 2vh;
-   box-shadow: 0 0 1vh #262626;
 }
 
 .explosion {

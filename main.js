@@ -141,8 +141,6 @@ function shiver(obj) {
 
 // Random change of sleeping or drawing
 
-// Create museaum for all found items
-
 function explosion(query) { document.querySelector(query).classList.add("explosion"); }
 let uniqueId = function () { return '_' + Math.random().toString(36).substr(2, 9); }
 function cap(string) { return string.charAt(0).toUpperCase() + string.slice(1); }
